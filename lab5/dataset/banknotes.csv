@@ -1,9 +1,9 @@
 % Context
-% Will you be able to identify genuine and conterfeit banknotes, even if half of the data is conterfeit? Perfect for testing different outlier detection algorithms.
+% Will you be able to identify genuine and counterfeit banknotes, even if half of the data is counterfeit? Perfect for testing different outlier detection algorithms.
 % Content
-% The dataset includes information about the shape of the bill, as well as the label. It is made up of 200 banknotes in total, 100 for genuine/conterfeit each.
+% The dataset includes information about the shape of the bill, as well as the label. It is made up of 200 banknotes in total, 100 for genuine/counterfeit each.
 % Attributes:
-% -conterfeit: Wether a banknote is conterfeit (1) or genuine (0)
+% -counterfeit: Wether a banknote is counterfeit (1) or genuine (0)
 % -Length: Length of bill (mm)
 % -Left: Width of left edge (mm)
 % -Right: Width of right edge (mm)
@@ -13,11 +13,11 @@
 % Original Data Source
 % Flury, B. and Riedwyl, H. (1988). Multivariate Statistics: A practical approach. London: Chapman  Hall, Tables 1.1 and 1.2, pp. 5-8.
 % Applications
-% While it might be pretty easy for a classifier to decide wether the banknotes are conterfeit or not, what about methods using outlier detection?
-% Classical methods of outlier detection won't work, since half of the data consist of outliers (conterfeit bills), so more robust methods will be needed.
-@RELATION Swiss-banknote-conterfeit-detection
+% While it might be pretty easy for a classifier to decide wether the banknotes are counterfeit or not, what about methods using outlier detection?
+% Classical methods of outlier detection won't work, since half of the data consist of outliers (counterfeit bills), so more robust methods will be needed.
+@RELATION Swiss-banknote-counterfeit-detection
 
-@ATTRIBUTE conterfeit INTEGER
+@ATTRIBUTE counterfeit INTEGER
 @ATTRIBUTE Length REAL
 @ATTRIBUTE Left REAL
 @ATTRIBUTE Right REAL
