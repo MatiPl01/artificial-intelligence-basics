@@ -1,31 +1,3 @@
-% Context
-% Will you be able to identify genuine and conterfeit banknotes, even if half of the data is conterfeit? Perfect for testing different outlier detection algorithms.
-% Content
-% The dataset includes information about the shape of the bill, as well as the label. It is made up of 200 banknotes in total, 100 for genuine/conterfeit each.
-% Attributes:
-% -conterfeit: Wether a banknote is conterfeit (1) or genuine (0)
-% -Length: Length of bill (mm)
-% -Left: Width of left edge (mm)
-% -Right: Width of right edge (mm)
-% -Bottom: Bottom margin width (mm)
-% -Top: Top margin width (mm)
-% -Diagonal: Length of diagonal (mm)
-% Original Data Source
-% Flury, B. and Riedwyl, H. (1988). Multivariate Statistics: A practical approach. London: Chapman  Hall, Tables 1.1 and 1.2, pp. 5-8.
-% Applications
-% While it might be pretty easy for a classifier to decide wether the banknotes are conterfeit or not, what about methods using outlier detection?
-% Classical methods of outlier detection won't work, since half of the data consist of outliers (conterfeit bills), so more robust methods will be needed.
-@RELATION Swiss-banknote-conterfeit-detection
-
-@ATTRIBUTE conterfeit INTEGER
-@ATTRIBUTE Length REAL
-@ATTRIBUTE Left REAL
-@ATTRIBUTE Right REAL
-@ATTRIBUTE Bottom REAL
-@ATTRIBUTE Top REAL
-@ATTRIBUTE Diagonal REAL
-
-@DATA
 0.0,214.8,131.0,131.1,9.0,9.7,141.0
 0.0,214.6,129.7,129.7,8.1,9.5,141.7
 0.0,214.8,129.7,129.7,8.7,9.6,142.2
